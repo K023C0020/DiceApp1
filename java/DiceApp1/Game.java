@@ -1,30 +1,22 @@
 public class Game {
-    Player p1;
-    Player p2;
-    Dice d1;
-    Dice d2;
+    Player p;
+    Dice d;
 
     Game() {
-        p1 = new Player();
-        p2 = new Player();
-        d1 = new Dice();
-        d2 = new Dice();
+        p = new Player();
+        d = new Dice();
     }
 
     void start() {
-        int result1 = p1.turn(d1);
-        int result2 = p2.turn(d2);
-
-        judge(result1, result2);
+        p.turn(d);
+        System.out.println(d.me);
     }
 
-    void judge(int result1, int result2) {
-        if (result1 > result2) {
-            System.out.println("Player1の勝ち");
-        }else if(result1 < result2) {
-            System.out.println("Player2の勝ち");
+    void judge() {
+        if(d.me == 6) {
+            System.out.println("あたり");
         }else {
-            System.out.println("あいこ");
+            System.out.println("はずれ");
         }
     }
 }
