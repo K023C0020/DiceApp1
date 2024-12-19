@@ -13,6 +13,10 @@ public class Game {
     }
 
     void judge() {
-
+        if(d.me == 6) {
+            System.out.println("あたり");
+        }else {
+            System.out.println("はずれ");
+        }
     }
 }
