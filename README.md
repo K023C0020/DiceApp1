@@ -1,2 +1,1 @@
-# DiceApp2
-# DiceApp2
+# DiceApp1
