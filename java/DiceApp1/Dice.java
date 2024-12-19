@@ -2,6 +2,10 @@ public class Dice {
     int me;
 
     void  roll() {
-        me = (int)(Math.random() * 6) + 1;
+        me = (int) (Math.random() * 6) + 1;
+    }
+
+    int getme(){
+        return me;
     }
 }
